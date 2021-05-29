@@ -1,10 +1,11 @@
 import React from 'react';
+import Character from '../../components/Character/Character';
 import './index.css';
 
 function Person() {
   return (
     <div className="person">
-      <h1>Luke Skywalker</h1>
+      <Character/>
     </div>
   );
 }
