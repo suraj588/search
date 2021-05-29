@@ -1,0 +1,19 @@
+.detailsCover {
+    min-width: 400px;
+    border-radius: 25px;
+    background-color: #cd2233;
+    margin-bottom: 50px;
+    height: fit-content;
+}
+
+.dataCover{
+    width: 100%;
+    text-align: center;
+}
+
+.dataCover>div{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 20px 0px;
+}

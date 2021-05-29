@@ -1,0 +1,28 @@
+.filmsCover{
+    min-width: 400px;
+    border-radius: 25px;
+    background-color: #cd2233;
+    text-align: center;
+    margin-bottom: 50px;
+    height: fit-content;
+}
+
+.filmsCover>h1{
+    padding: 20px 0px;
+}
+
+.dataCover{
+    width: 80%;
+    border-radius: 25%;
+    height: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    color: #134f63;
+    background-color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.dataCover>div{
+    padding: 10px 0px 10px;
+}
