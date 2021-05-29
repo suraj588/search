@@ -1,3 +1,8 @@
+.searchCover{
+    border-radius: 25px;
+    background: #2d2f30;
+}
+
 .search-input {
     width: 400px;
     padding: 16px 24px;
@@ -18,4 +23,8 @@
 
 .logo img {
     width: 200px;
+}
+
+.results {
+    border-top: 1.5px solid #000;
 }
