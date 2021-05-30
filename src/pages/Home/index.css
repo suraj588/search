@@ -1,10 +1,11 @@
 .searchCover{
+    width: 400px;
     border-radius: 25px;
     background: #2d2f30;
 }
 
 .search-input {
-    width: 400px;
+    width: 300px;
     padding: 16px 24px;
     border-radius: 25px;
     border: 0;
@@ -27,4 +28,8 @@
 
 .results {
     border-top: 1.5px solid #000;
+}
+.loading{
+    font-size: 20px;
+    margin-left: 10px;
 }

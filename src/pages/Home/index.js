@@ -19,7 +19,7 @@ function HomePage() {
         .then(res => setData(res.data.results))
         .catch(err => console.log(err))
       }
-    },1000);
+    },600);
     if(value === ""){
       setData([]);
     }
@@ -36,7 +36,6 @@ function HomePage() {
           {data?data.map(char => {
             let url = char.url;
             let arr = url.split("/");
-            console.log(arr);
             let id = +arr[arr.length-2];
             return (
                       <SearchResult name = {char.name} year = {char.birth_year} gender = {char.gender} id = {id} key = {char.name} />
