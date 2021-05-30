@@ -13,7 +13,7 @@ const Character = () => {
     const {id} = useParams();
     const [charData,setCharData] = React.useState(null);
     React.useEffect(() => {
-        axios.get(`https://swapi.dev/api/people/${id}`)
+        axios.get(`http://swapi.dev/api/people/${id}`)
         .then(res => {setCharData(res.data)})
         .catch(err => console.log(err));
     }, [id])
