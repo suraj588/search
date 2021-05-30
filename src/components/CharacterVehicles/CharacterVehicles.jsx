@@ -13,7 +13,7 @@ const CharacterVehicles = ({vehicles}) => {
             for(let i = 5; i < link.length; i++){
                 str += link[i];
             }
-            await axios.get(link)
+            await axios.get(str)
             .then(function(res){
                 setCharVehicles(state => [...state,res.data])
             })
