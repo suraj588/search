@@ -6,6 +6,7 @@ import CharacterFilms from "../CharacterFilms/CharacterFilms";
 import CharacterStarships from "../CharacterStarships/CharacterStarships";
 import CharacterVehicles from "../CharacterVehicles/CharacterVehicles";
 import styles from "./Character.module.css";
+import loadingImg from "./loading.png";
 
 const Character = () => {
 
@@ -29,7 +30,10 @@ const Character = () => {
                         <CharacterVehicles vehicles = {charData.vehicles}/>
                         <CharacterStarships starships = {charData.starships}/>
                     </div>
-                </div>):null
+                </div>):<div className = {styles.loading}>
+                            <img src={loadingImg} alt="loading"  />
+                            <div>Loading...</div>
+                        </div>
             }
             
         </>

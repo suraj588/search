@@ -21,3 +21,17 @@
     justify-content: center;
     gap: 50px;
 }
+
+.loading{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+.loading > img{
+    width: 100%;
+    height: inherit;
+}
