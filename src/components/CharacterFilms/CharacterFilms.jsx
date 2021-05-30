@@ -8,7 +8,11 @@ const CharacterFilms = ({films}) => {
     const [charFilms,setcharFilms] = React.useState([]);
     React.useEffect(() => {
         films.map(async function(link){
-            await axios.get(link)
+            let str = "https:";
+            for(let i = 5; i < link.length; i++){
+                str += link[i];
+            }
+            await axios.get(str)
             .then(function(res){
                 setcharFilms(state => [...state,res.data])
             })
