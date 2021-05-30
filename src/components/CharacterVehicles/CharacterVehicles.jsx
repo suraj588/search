@@ -9,6 +9,10 @@ const CharacterVehicles = ({vehicles}) => {
 
     React.useEffect(() => {
         vehicles.map(async function(link){
+            let str = "https:";
+            for(let i = 5; i < link.length; i++){
+                str += link[i];
+            }
             await axios.get(link)
             .then(function(res){
                 setCharVehicles(state => [...state,res.data])
