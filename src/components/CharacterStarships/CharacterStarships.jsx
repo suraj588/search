@@ -9,6 +9,10 @@ const CharacterStarships = ({starships}) => {
 
     React.useEffect(() => {
         starships.map(async function(link){
+            let str = "https:";
+            for(let i = 5; i < link.length; i++){
+                str += link[i];
+            }
             await axios.get(link)
             .then(function(res){
                 setCharStarships(state => [...state,res.data])
